@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack --disable-source-maps",
+    "dev": "node api.js && next dev --webpack --disable-source-maps",
     "build": "next build --webpack",
-    "start": "next start",
+    "start": "node api.js && next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
